@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Obtenez un devis gratuit pour les services de nettoyage professionnel de Tapis Rouge Pro. Formulaire détaillé pour une soumission personnalisée.">
+  <meta name="keywords" content="devis, soumission, prix, nettoyage professionnel, formulaire, Montréal">
+  <title>Obtenir une soumission | Tapis Rouge Pro</title>
+  <link rel="icon" href="icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Tapis Rouge Pro">
+        <span class="logo-text">Tapis Rouge Pro</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="quote.html" class="cta-button active">Obtenez un devis</a>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Obtenez une Soumission Gratuite</h1>
+        <p>Remplissez le formulaire ci-dessous pour recevoir une soumission personnalisée pour vos besoins de nettoyage</p>
+      </div>
+    </section>
+
+    <section id="quote-process">
+      <div class="section-title">
+        <h2>Comment ça fonctionne</h2>
+        <p>Un processus simple en 3 étapes pour obtenir votre soumission</p>
+      </div>
+      <div class="process-steps">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <h3>Remplissez le formulaire</h3>
+          <p>Décrivez vos besoins en détail pour nous permettre de préparer une soumission précise</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <h3>Réception dans 24h</h3>
+          <p>Nous analysons votre demande et vous préparons une soumission détaillée</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <h3>Suivi personnalisé</h3>
+          <p>Nous vous contactons pour discuter de votre soumission et répondre à vos questions</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote-form-section">
+      <div class="section-title">
+        <h2>Formulaire de Soumission</h2>
+        <p>Tous les champs marqués d'un astérisque (*) sont obligatoires</p>
+      </div>
+      <div class="form-container">
+        <form id="quoteForm" class="quote-form">
+          
+          <!-- Informations Client -->
+          <div class="form-section">
+            <h3><i class="fas fa-user"></i> Informations Client</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">Prénom *</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="Jean">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Nom *</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Tremblay">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Nom de l'entreprise (optionnel)</label>
+              <input type="text" id="company" name="company" placeholder="Entreprise ABC inc.">
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Courriel *</label>
+                <input type="email" id="email" name="email" required placeholder="jean.tremblay@email.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Téléphone *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(514) 123-4567">
+              </div>
+            </div>
+          </div>
+
+          <!-- Type d'établissement -->
+          <div class="form-section">
+            <h3><i class="fas fa-building"></i> Type d'établissement</h3>
+            <div class="form-group">
+              <label for="businessType">Type d'entreprise/établissement *</label>
+              <select id="businessType" name="businessType" required>
+                <option value="">Sélectionnez le type d'établissement</option>
+                <option value="Édifices de bureau">Édifices de bureau</option>
+                <option value="Centre commercial">Centre commercial</option>
+                <option value="Établissement d'enseignement">Établissement d'enseignement</option>
+                <option value="Établissement de santé">Établissement de santé</option>
+                <option value="Résidentiel">Résidentiel</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+            
+            <div class="form-group" id="otherBusinessTypeGroup" style="display: none;">
+              <label for="otherBusinessType">Veuillez préciser</label>
+              <input type="text" id="otherBusinessType" name="otherBusinessType" placeholder="Description du type d'établissement">
+            </div>
+          </div>
+
+          <!-- Langue de communication -->
+          <div class="form-section">
+            <h3><i class="fas fa-language"></i> Langue de communication préférée</h3>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="french" name="languages" value="Français">
+                <span class="checkmark"></span>
+                Français
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="english" name="languages" value="Anglais">
+                <span class="checkmark"></span>
+                Anglais
+              </label>
+            </div>
+          </div>
+
+          <!-- Services requis -->
+          <div class="form-section">
+            <h3><i class="fas fa-broom"></i> Services requis</h3>
+            <div class="checkbox-grid">
+              <label class="checkbox-label">
+                <input type="checkbox" name="services" value="Entretien général">
+                <span class="checkmark"></span>
+                Entretien général
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="services" value="Entretien des planchers">
+                <span class="checkmark"></span>
+                Entretien des planchers
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="services" value="Désinfection">
+                <span class="checkmark"></span>
+                Désinfection
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="services" value="Nettoyage bureau">
+                <span class="checkmark"></span>
+                Nettoyage bureau
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="services" value="Nettoyage salle de bain">
+                <span class="checkmark"></span>
+                Nettoyage salle de bain
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="services" value="Nettoyage vitres">
+                <span class="checkmark"></span>
+                Nettoyage vitres
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="services" value="Entretien cuisine">
+                <span class="checkmark"></span>
+                Entretien cuisine
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="services" value="Nettoyage post-travaux">
+                <span class="checkmark"></span>
+                Nettoyage post-travaux
+              </label>
+            </div>
+            
+            <div class="form-group">
+              <label for="otherServices">Autres services à préciser</label>
+              <textarea id="otherServices" name="otherServices" rows="3" placeholder="Décrivez tout autre service dont vous avez besoin..."></textarea>
+            </div>
+          </div>
+
+          <!-- Détails de l'espace -->
+          <div class="form-section">
+            <h3><i class="fas fa-ruler-combined"></i> Détails de l'espace</h3>
+            <div class="form-group">
+              <label>Choisissez une option de description *</label>
+              <div class="space-options">
+                <label class="space-option">
+                  <input type="checkbox" name="spaceType" value="surface" id="spaceTypeSurface">
+                  <span class="space-check"></span>
+                  <span class="space-label-text">Surface totale (pieds carrés)</span>
+                  <input type="number" id="surfaceArea" name="surfaceArea" placeholder="Ex: 1500" min="1" class="space-input">
+                </label>
+                <label class="space-option">
+                  <input type="checkbox" name="spaceType" value="roomCount" id="spaceTypeRoom">
+                  <span class="space-check"></span>
+                  <span class="space-label-text">Nombre de pièces</span>
+                  <input type="number" id="roomCount" name="roomCount" placeholder="Ex: 8" min="1" class="space-input">
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="frequency">Nombre de jours/semaine</label>
+              <select id="frequency" name="frequency">
+                <option value="">Sélectionnez la fréquence</option>
+                <option value="1">1 fois par semaine</option>
+                <option value="2">2 fois par semaine</option>
+                <option value="3">3 fois par semaine</option>
+                <option value="4">4 fois par semaine</option>
+                <option value="5">5 fois par semaine</option>
+                <option value="quotidien">Quotidien</option>
+                <option value="bi-hebdomadaire">Bi-hebdomadaire</option>
+                <option value="mensuel">Mensuel</option>
+                <option value="ponctuel">Ponctuel</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Types de pièces concernées</label>
+              <div class="checkbox-grid">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="roomTypes" value="Bureaux">
+                  <span class="checkmark"></span>
+                  Bureaux
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="roomTypes" value="Salles de réunion">
+                  <span class="checkmark"></span>
+                  Salles de réunion
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="roomTypes" value="Cuisine / Cafétéria">
+                  <span class="checkmark"></span>
+                  Cuisine / Cafétéria
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="roomTypes" value="Salles de bain">
+                  <span class="checkmark"></span>
+                  Salles de bain
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="roomTypes" value="Couloirs">
+                  <span class="checkmark"></span>
+                  Couloirs
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="roomTypes" value="Vestiaires">
+                  <span class="checkmark"></span>
+                  Vestiaires
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="roomTypes" value="Hall d'entrée">
+                  <span class="checkmark"></span>
+                  Hall d'entrée
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="roomTypes" value="Autres">
+                  <span class="checkmark"></span>
+                  Autres
+                </label>
+              </div>
+              <div class="form-group" id="otherRoomTypeGroup" style="display: none;">
+                <label for="otherRoomType">Préciser les autres pièces</label>
+                <input type="text" id="otherRoomType" name="otherRoomType" placeholder="Décrivez les autres pièces">
+              </div>
+            </div>
+          </div>
+
+          <!-- Secteurs désirés -->
+          <div class="form-section">
+            <h3><i class="fas fa-map-marker-alt"></i> Secteurs désirés</h3>
+            <div class="checkbox-grid">
+              <label class="checkbox-label">
+                <input type="checkbox" name="sectors" value="Centre-ville de Montréal">
+                <span class="checkmark"></span>
+                Centre-ville de Montréal
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="sectors" value="Laval">
+                <span class="checkmark"></span>
+                Laval
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="sectors" value="Longueuil">
+                <span class="checkmark"></span>
+                Longueuil
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="sectors" value="Repentigny">
+                <span class="checkmark"></span>
+                Repentigny
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="sectors" value="Terrebonne">
+                <span class="checkmark"></span>
+                Terrebonne
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="sectors" value="Autres">
+                <span class="checkmark"></span>
+                Autres
+              </label>
+            </div>
+            
+            <div class="form-group" id="otherSectorGroup" style="display: none;">
+              <label for="otherSector">Veuillez préciser les autres secteurs</label>
+              <input type="text" id="otherSector" name="otherSector" placeholder="Nom des autres secteurs">
+            </div>
+          </div>
+
+          <!-- Équipements -->
+          <div class="form-section">
+            <h3><i class="fas fa-tools"></i> Produits et équipements fournis par</h3>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="equipmentProvider" value="Tapis Rouge Pro" required>
+                <span class="radio-mark"></span>
+                Tapis Rouge Pro
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="equipmentProvider" value="Client" required>
+                <span class="radio-mark"></span>
+                Client
+              </label>
+            </div>
+          </div>
+
+          <!-- Message additionnel -->
+          <div class="form-section">
+            <h3><i class="fas fa-comment"></i> Message additionnel</h3>
+            <div class="form-group">
+              <label for="additionalMessage">Précisions supplémentaires</label>
+              <textarea id="additionalMessage" name="additionalMessage" rows="4" placeholder="Ajoutez toute information pertinente concernant vos besoins spécifiques, contraintes horaires, exigences particulières, etc."></textarea>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Soumettre la demande
+            </button>
+            <button type="reset" class="btn-secondary">
+              <i class="fas fa-redo"></i> Réinitialiser
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="features" id="quote-info">
+      <div class="section-title">
+        <h2>Informations Importantes</h2>
+        <p>Ce que vous devez savoir sur notre processus de soumission</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h4>Délai de réponse</h4>
+          <p>Nous nous engageons à vous répondre dans les 24 heures ouvrables avec une soumission détaillée.</p>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h4>Visite sur place</h4>
+          <p>Pour les projets complexes, nous pouvons organiser une visite gratuite pour évaluer précisément vos besoins.</p>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h4>Sans engagement</h4>
+          <p>Toutes nos soumissions sont gratuites et sans aucune obligation de votre part.</p>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h4>Qualité garantie</h4>
+          <p>Nos soumissions incluent des garanties de satisfaction et des standards de qualité clairs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="section-title">
+        <h2>Questions?</h2>
+        <p>Notre équipe est disponible pour vous aider à remplir votre demande de soumission</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="tel:(514)123-4567" class="btn-primary">
+          <i class="fas fa-phone"></i> Appeler maintenant
+        </a>
+        <a href="contact.html" class="btn-secondary">Autres moyens de contact</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="logo">
+          <img src="logo.png" alt="Tapis Rouge Pro">
+          <span class="logo-text">Tapis Rouge Pro</span>
+        </div>
+        <p>Tapis Rouge Pro offre des services de nettoyage professionnels et écologiques pour les entreprises et résidences de la région de Montréal.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quote.html">Obtenir un devis</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html">Entretien général</a></li>
+          <li><a href="services.html">Entretien des planchers</a></li>
+          <li><a href="services.html">Désinfection</a></li>
+          <li><a href="services.html">Nettoyage de bureaux</a></li>
+          <li><a href="services.html">Nettoyage salles de bain</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Montréal, Québec, Canada</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:(514)123-4567">(514) 123-4567</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@tapisrougepro.ca">info@tapisrougepro.ca</a></li>
+          <li><i class="fas fa-clock"></i> Lun-Ven: 8h00 - 18h00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Tapis Rouge Pro. Tous droits réservés.</p>
+      <div>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions d'utilisation</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/quote.js"></script>
+</body>
+</html>

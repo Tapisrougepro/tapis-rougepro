@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez tous les services de nettoyage professionnel de Tapis Rouge Pro : entretien général, planchers, désinfection, bureaux, salles de bain, et plus. Services écologiques pour le Grand Montréal.">
+  <meta name="keywords" content="services nettoyage, entretien général, planchers, désinfection, nettoyage bureaux, nettoyage écologique, Montréal">
+  <title>Services | Tapis Rouge Pro</title>
+  <link rel="icon" href="icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Tapis Rouge Pro">
+        <span class="logo-text">Tapis Rouge Pro</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="quote.html" class="cta-button">Obtenez un devis</a>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Nos Services de Nettoyage Professionnel</h1>
+        <p>Des solutions complètes et écologiques adaptées à tous vos besoins</p>
+      </div>
+    </section>
+
+    <section id="service-categories">
+      <div class="section-title">
+        <h2>Catégories de Services</h2>
+        <p>Choisissez la catégorie qui correspond à vos besoins</p>
+      </div>
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="all">Tous les services</button>
+        <button class="filter-btn" data-category="commercial">Commercial</button>
+        <button class="filter-btn" data-category="residential">Résidentiel</button>
+        <button class="filter-btn" data-category="specialized">Spécialisé</button>
+      </div>
+    </section>
+
+    <section id="services-list">
+      <div class="services-grid" id="servicesGrid">
+        <!-- Services will be loaded dynamically -->
+        <div class="loading-spinner"><div class="spinner"></div></div>
+      </div>
+    </section>
+
+    <section class="features" id="process">
+      <div class="section-title">
+        <h2>Notre Processus de Service</h2>
+        <p>Comment nous transformons votre espace en 4 étapes simples</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h4>Évaluation & Consultation</h4>
+            <p>Nous analysons vos besoins spécifiques, évaluons l'espace et discutons de vos exigences pour créer un plan sur mesure.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h4>Planification & Personnalisation</h4>
+            <p>Nous développons un plan de nettoyage détaillé avec fréquence, produits écologiques et équipe assignée.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h4>Exécution Professionnelle</h4>
+            <p>Notre équipe certifiée intervient selon les standards les plus élevés avec attention aux détails et respect de vos lieux.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h4>Suivi & Satisfaction</h4>
+            <p>Nous vérifions la qualité, recueillons vos commentaires et ajustons notre service pour garantir votre satisfaction totale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service-details">
+      <div class="section-title">
+        <h2>Détails de Nos Services</h2>
+        <p>Ce qui distingue chaque service que nous offrons</p>
+      </div>
+      <div class="details-grid">
+        <div class="detail-card">
+          <div class="detail-icon">
+            <i class="fas fa-broom"></i>
+          </div>
+          <h3>Entretien Général</h3>
+          <div class="detail-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Poussière et surfaces</li>
+              <li><i class="fas fa-check"></i> Vitres et miroirs</li>
+              <li><i class="fas fa-check"></i> Poubelles et recyclage</li>
+              <li><i class="fas fa-check"></i> Désinfection des points de contact</li>
+            </ul>
+          </div>
+          <div class="detail-spaces">
+            <h4>Espaces desservis</h4>
+            <p>Bureaux, salles de réunion, zones communes, réceptions, couloirs</p>
+          </div>
+          <div class="detail-frequency">
+            <h4>Fréquences disponibles</h4>
+            <p>Quotidien, hebdomadaire, bi-hebdomadaire, mensuel</p>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">
+            <i class="fas fa-soap"></i>
+          </div>
+          <h3>Entretien des Planchers</h3>
+          <div class="detail-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Lavage et stripping</li>
+              <li><i class="fas fa-check"></i> Cirage et polissage</li>
+              <li><i class="fas fa-check"></i> Entretien du bois</li>
+              <li><i class="fas fa-check"></i> Traitement des taches</li>
+            </ul>
+          </div>
+          <div class="detail-spaces">
+            <h4>Types de planchers</h4>
+            <p>Linoléum, vinyle, bois, marbre, céramique, tapis</p>
+          </div>
+          <div class="detail-frequency">
+            <h4>Fréquences recommandées</h4>
+            <p>Hebdomadaire, mensuel, trimestriel selon le type</p>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">
+            <i class="fas fa-shield-virus"></i>
+          </div>
+          <h3>Désinfection</h3>
+          <div class="detail-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Désinfection électrostatique</li>
+              <li><i class="fas fa-check"></i> Traitement des surfaces haute touche</li>
+              <li><i class="fas fa-check"></i> Désinfection des sanitaires</li>
+              <li><i class="fas fa-check"></i> Produits certifiés sant publique</li>
+            </ul>
+          </div>
+          <div class="detail-spaces">
+            <h4>Zones prioritaires</h4>
+            <p>Sanitaires, cuisines, poignées, interrupteurs, espaces communs</p>
+          </div>
+          <div class="detail-frequency">
+            <h4>Fréquences disponibles</h4>
+            <p>Quotidien, hebdomadaire, ou selon besoins spécifiques</p>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>Nettoyage de Bureaux</h3>
+          <div class="detail-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Postes de travail</li>
+              <li><i class="fas fa-check"></i> Équipements informatiques</li>
+              <li><i class="fas fa-check"></i> Salles de réunion</li>
+              <li><i class="fas fa-check"></i> Espaces de repos</li>
+            </ul>
+          </div>
+          <div class="detail-spaces">
+            <h4>Types d'entreprises</h4>
+            <p>Bureaux, espaces coworking, centres d'affaires, sièges sociaux</p>
+          </div>
+          <div class="detail-frequency">
+            <h4>Fréquences disponibles</h4>
+            <p>Quotidien, hebdomadaire, bi-hebdomadaire</p>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">
+            <i class="fas fa-bath"></i>
+          </div>
+          <h3>Nettoyage de Salles de Bain</h3>
+          <div class="detail-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Désinfection complète</li>
+              <li><i class="fas fa-check"></i> Nettoyage des sanitaires</li>
+              <li><i class="fas fa-check"></i> Entretien des miroirs</li>
+              <li><i class="fas fa-check"></i> Replenishment des fournitures</li>
+            </ul>
+          </div>
+          <div class="detail-spaces">
+            <h4>Types d'installations</h4>
+            <p>Sanitaires commerciaux, vestiaires, douches, salles de changement</p>
+          </div>
+          <div class="detail-frequency">
+            <h4>Fréquences recommandées</h4>
+            <p>Quotidien pour les zones à haute circulation</p>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Nettoyage Post-Travaux</h3>
+          <div class="detail-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Enlèvement des débris</li>
+              <li><i class="fas fa-check"></i> Nettoyage de la poussière</li>
+              <li><i class="fas fa-check"></i> Préparation pour livraison</li>
+              <li><i class="fas fa-check"></i> Nettoyage des nouvelles surfaces</li>
+            </ul>
+          </div>
+          <div class="detail-spaces">
+            <h4>Types de projets</h4>
+            <p>Rénovations, nouvelles constructions, déménagements, réfections</p>
+          </div>
+          <div class="detail-frequency">
+            <h4>Service ponctuel</h4>
+            <p>Sur demande selon l'échéancier de vos projets</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="section-title">
+        <h2>Nos Tarifs Compétitifs</h2>
+        <p>Des solutions adaptées à tous les budgets</p>
+      </div>
+      <div class="pricing-info">
+        <div class="pricing-card">
+          <div class="pricing-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <h3>Devis Personnalisé</h3>
+          <p>Chaque projet est unique. Nous vous proposons un devis détaillé basé sur vos besoins spécifiques, la superficie et la fréquence requise.</p>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-icon">
+            <i class="fas fa-tags"></i>
+          </div>
+          <h3>Tarifs Transparents</h3>
+          <p>Aucun frais caché. Notre devis inclut tous les coûts : main d'œuvre, produits écologiques, équipements et déplacements.</p>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Contrats Flexibles</h3>
+          <p>Pas d'engagement à long terme. Services ponctuels, mensuels ou annuels selon vos besoins avec possibilité d'ajustement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="section-title">
+        <h2>Prêt à transformer votre espace?</h2>
+        <p>Contactez-nous dès aujourd'hui pour un devis gratuit et sans engagement</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="quote.html" class="btn-primary">Obtenir un devis gratuit</a>
+        <a href="contact.html" class="btn-secondary">Parler à un expert</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="logo">
+          <img src="logo.png" alt="Tapis Rouge Pro">
+          <span class="logo-text">Tapis Rouge Pro</span>
+        </div>
+        <p>Tapis Rouge Pro offre des services de nettoyage professionnels et écologiques pour les entreprises et résidences de la région de Montréal.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quote.html">Obtenir un devis</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html">Entretien général</a></li>
+          <li><a href="services.html">Entretien des planchers</a></li>
+          <li><a href="services.html">Désinfection</a></li>
+          <li><a href="services.html">Nettoyage de bureaux</a></li>
+          <li><a href="services.html">Nettoyage salles de bain</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Montréal, Québec, Canada</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:(514)000-0000">(514) 000-0000</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@tapisrougepro.ca">info@tapisrougepro.ca</a></li>
+          <li><i class="fas fa-clock"></i> Lun-Ven: 8h00 - 18h00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Tapis Rouge Pro. Tous droits réservés.</p>
+      <div>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions d'utilisation</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>

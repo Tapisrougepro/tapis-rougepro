@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tapis Rouge Pro - Services de nettoyage professionnel et écologique pour les entreprises et résidences de la région de Montréal, Laval, Longueuil, Repentigny et Terrebonne.">
+  <meta name="keywords" content="nettoyage professionnel, nettoyage écologique, entretien commercial, Montréal, Laval, Longueuil">
+  <title>Accueil | Tapis Rouge Pro</title>
+  <link rel="icon" href="icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Tapis Rouge Pro">
+        <span class="logo-text">Tapis Rouge Pro</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="quote.html" class="cta-button">Obtenez un devis</a>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 id="heroTitle">Nettoyage Professionnel et Écologique</h1>
+          <p id="heroSubtitle">Votre partenaire de confiance pour des espaces propres, sains et accueillants dans le Grand Montréal</p>
+          <div class="hero-buttons">
+            <a href="quote.html" class="btn-primary">Obtenez un devis gratuit</a>
+            <a href="services.html" class="btn-secondary">Découvrir nos services</a>
+          </div>
+        </div>
+        <div class="hero-logo-wrapper">
+          <img src="logo.png" alt="Tapis Rouge Pro" class="hero-logo-img" id="heroLogo">
+          <div class="hero-logo-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-title">
+        <h2>Nos Services</h2>
+        <p>Une gamme complète de services adaptés à vos besoins</p>
+      </div>
+      <div class="services-grid" id="homeServicesGrid">
+        <div class="loading-spinner"><div class="spinner"></div></div>
+      </div>
+    </section>
+
+    <section class="features" id="about">
+      <div class="section-title">
+        <h2>Qui nous sommes</h2>
+        <p>Tapis Rouge Pro, votre partenaire de confiance</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Produits écologiques</h4>
+            <p>Nous utilisons exclusivement des produits certifiés écologiques, sans danger pour vos proches et l'environnement.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Équipe certifiée</h4>
+            <p>Tous nos techniciens sont rigoureusement formés et certifiés selon les plus hauts standards de l'industrie.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Flexibilité des horaires</h4>
+            <p>Nous nous adaptons à votre emploi du temps avec des interventions tôt le matin, en soirée ou le week-end.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Satisfaction garantie</h4>
+            <p>Votre satisfaction est notre priorité absolue. Si vous n'êtes pas entièrement satisfait, nous revenons sans frais.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Équipements modernes</h4>
+            <p>Nous investissons continuellement dans des équipements de pointe pour des résultats optimaux à chaque intervention.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Couverture régionale</h4>
+            <p>Nous intervenons dans tout le Grand Montréal : Centre-ville, Laval, Longueuil, Repentigny et Terrebonne.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-title">
+        <h2>Nos Réalisations</h2>
+        <p>Découvrez quelques-uns de nos projets de nettoyage professionnel</p>
+      </div>
+      <div class="gallery-carousel-wrapper">
+        <button class="gallery-nav gallery-prev" id="galleryPrev"><i class="fas fa-chevron-left"></i></button>
+        <div class="gallery-carousel" id="galleryCarousel">
+          <div class="gallery-track" id="galleryTrack">
+            <div class="loading-spinner"><div class="spinner"></div></div>
+          </div>
+        </div>
+        <button class="gallery-nav gallery-next" id="galleryNext"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="gallery-dots" id="galleryDots"></div>
+    </section>
+
+    <section id="faq">
+      <div class="section-title">
+        <h2>Questions Fréquentes</h2>
+        <p>Vous avez des questions? Nous avons les réponses</p>
+      </div>
+      <div class="faq-container" id="faqContainer">
+        <div class="loading-spinner"><div class="spinner"></div></div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="section-title">
+        <h2>Prêt à transformer votre espace?</h2>
+        <p>Obtenez un devis gratuit et personnalisé dès aujourd'hui</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="quote.html" class="btn-primary">Obtenir un devis</a>
+        <a href="contact.html" class="btn-secondary">Nous contacter</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="logo">
+          <img src="logo.png" alt="Tapis Rouge Pro">
+          <span class="logo-text">Tapis Rouge Pro</span>
+        </div>
+        <p>Tapis Rouge Pro offre des services de nettoyage professionnels et écologiques pour les entreprises et résidences de la région de Montréal.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quote.html">Obtenir un devis</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html">Entretien général</a></li>
+          <li><a href="services.html">Entretien des planchers</a></li>
+          <li><a href="services.html">Désinfection</a></li>
+          <li><a href="services.html">Nettoyage de bureaux</a></li>
+          <li><a href="services.html">Nettoyage salles de bain</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Montréal, Québec, Canada</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:(514)000-0000">(514) 000-0000</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@tapisrougepro.ca">info@tapisrougepro.ca</a></li>
+          <li><i class="fas fa-clock"></i> Lun-Ven: 8h00 - 18h00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Tapis Rouge Pro. Tous droits réservés.</p>
+      <div>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions d'utilisation</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

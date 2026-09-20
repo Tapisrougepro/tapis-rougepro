@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Tapis Rouge Pro pour des services de nettoyage professionnel et écologique. Téléphonez-nous ou remplissez notre formulaire de contact.">
+  <meta name="keywords" content="contact, téléphone, email, formulaire, Tapis Rouge Pro, Montréal">
+  <title>Contact | Tapis Rouge Pro</title>
+  <link rel="icon" href="icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Tapis Rouge Pro">
+        <span class="logo-text">Tapis Rouge Pro</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="quote.html" class="cta-button">Obtenez un devis</a>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Contactez Tapis Rouge Pro</h1>
+        <p>Nous sommes là pour répondre à toutes vos questions et vous aider à transformer votre espace</p>
+      </div>
+    </section>
+
+    <section id="contact-info">
+      <div class="section-title">
+        <h2>Nos Coordonnées</h2>
+        <p>Plusieurs façons de nous joindre pour votre convenance</p>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Adresse</h3>
+          <p>6573-A rue De Lotbinière<br>Montréal, QC H1S 2W9<br>Canada</p>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Téléphone</h3>
+          <p><a href="tel:(438)765-4371">(438) 765-4371</a><br>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Courriel</h3>
+          <p><a href="mailto:info@tapisrougepro.ca">info@tapisrougepro.ca</a><br>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Heures d'ouverture</h3>
+          <p>Lundi - Vendredi: 8h00 - 18h00<br>
+          Samedi: 9h00 - 16h00<br>
+          Dimanche: Fermé</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-form-section">
+      <div class="section-title">
+        <h2>Envoyez-nous un message</h2>
+        <p>Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais</p>
+      </div>
+      <div class="form-container">
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom complet *</label>
+              <input type="text" id="name" name="name" required placeholder="Jean Tremblay">
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(438) 765-4371">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Courriel *</label>
+            <input type="email" id="email" name="email" required placeholder="jean.tremblay@email.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Objet *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Sélectionnez un objet</option>
+              <option value="Demande d'information">Demande d'information</option>
+              <option value="Demande de soumission">Demande de soumission</option>
+              <option value="Service client">Service client</option>
+              <option value="Partenariat">Partenariat</option>
+              <option value="Carrières">Carrières</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Décrivez vos besoins ou posez votre question ici..."></textarea>
+          </div>
+          
+          <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <span class="checkmark"></span>
+              Je souhaite recevoir des nouvelles et des offres spéciales de Tapis Rouge Pro
+            </label>
+          </div>
+          
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Envoyer le message
+            </button>
+            <button type="reset" class="btn-secondary">
+              <i class="fas fa-redo"></i> Réinitialiser
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="map-section">
+      <div class="section-title">
+        <h2>Nous Trouver</h2>
+        <p>Notre bureau principal situé au cœur de Montréal</p>
+      </div>
+      <div class="map-container">
+        <div class="map-placeholder">
+          <div class="map-content">
+            <div class="map-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <h3>Carte Interactive</h3>
+            <p>6573-A rue De Lotbinière<br>Montréal, QC H1S 2W9</p>
+            <a href="https://maps.google.com/?q=6573-A+rue+De Lotbinière+Monttréal+QC" target="_blank" class="btn-primary">
+              <i class="fas fa-external-link-alt"></i> Voir sur Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="faq-contact">
+      <div class="section-title">
+        <h2>Questions Fréquentes</h2>
+        <p>Les réponses aux questions que nos clients nous posent le plus souvent</p>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Quels sont vos délais de réponse?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Nous nous engageons à répondre à tous les messages dans les 24 heures ouvrables. Pour les demandes urgentes, nous vous recommandons de nous appeler directement.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Offrez-vous des services d'urgence?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Oui, nous offrons des services d'urgence pour les situations imprévues comme les dégâts d'eau ou les nettoyages post-événements. Contactez-nous par téléphone pour une intervention rapide.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Puis-je visiter vos bureaux?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolument! Nos bureaux sont ouverts du lundi au vendredi de 9h00 à 17h00. Nous vous recommandons de prendre rendez-vous pour nous assurer que quelqu'un soit disponible pour vous accueillir.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Comment puis-je obtenir un devis rapidement?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Pour un devis rapide, remplissez notre formulaire de soumission en ligne ou appelez-nous directement. Pour les projets complexes, nous pouvons organiser une visite sur place pour évaluer précisément vos besoins.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="section-title">
+        <h2>Prêt à commencer?</h2>
+        <p>Transformez votre espace avec nos services professionnels et écologiques</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="quote.html" class="btn-primary">Obtenir un devis gratuit</a>
+        <a href="tel:(438)765-4371" class="btn-secondary">
+          <i class="fas fa-phone"></i> Appeler maintenant
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="logo">
+          <img src="logo.png" alt="Tapis Rouge Pro">
+          <span class="logo-text">Tapis Rouge Pro</span>
+        </div>
+        <p>Tapis Rouge Pro offre des services de nettoyage professionnels et écologiques pour les entreprises et résidences de la région de Montréal.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quote.html">Obtenir un devis</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html">Entretien général</a></li>
+          <li><a href="services.html">Entretien des planchers</a></li>
+          <li><a href="services.html">Désinfection</a></li>
+          <li><a href="services.html">Nettoyage de bureaux</a></li>
+          <li><a href="services.html">Nettoyage salles de bain</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Montréal, Québec, Canada</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:(438)765-4371">(438) 765-4371</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@tapisrougepro.ca">info@tapisrougepro.ca</a></li>
+          <li><i class="fas fa-clock"></i> Lun-Ven: 8h00 - 18h00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Tapis Rouge Pro. Tous droits réservés.</p>
+      <div>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions d'utilisation</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
