@@ -1,12 +1,15 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Tapis Rouge Pro</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-<body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-</body>
-</html>
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+collections:
+    - name: "pages"
+    label: "Pages"
+    files:
+            - file: "content/home.md"
+        label: "Accueil"
+        name: "home"
+        fields:
+                    - {label: "Titre", name: "title", widget: "string"}
+                    - {label: "Contenu", name: "body", widget: "markdown"}
