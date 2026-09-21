@@ -9,7 +9,7 @@ collections:
     files:
       - name: "home"
         label: "Accueil"
-        file: "admin/content/home.md"
+        file: "content/home.md"
         fields:
           - {label: "Titre", name: "title", widget: "string"}
           - {label: "Contenu", name: "body", widget: "markdown"}
