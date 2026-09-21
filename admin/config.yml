@@ -4,12 +4,12 @@ backend:
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 collections:
-    - name: "pages"
+  - name: "pages"
     label: "Pages"
     files:
-            - name: "home"
+      - name: "home"
         label: "Accueil"
         file: "admin/content/home.md"
         fields:
-                    - {label: "Titre", name: "title", widget: "string"}
-                    - {label: "Contenu", name: "body", widget: "markdown"}
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
