@@ -53,13 +53,13 @@ collections:
         label: "A) En-tete"
         file: "content/a-propos/header.md"
         fields:
-                    - {label: "Titre", name: "title", widget: "string", default: "A propos de Tapis Rouge Pro"}
+                    - {label: "Titre", name: "title", widget: "string"}
                     - {label: "Sous-titre", name: "subtitle", widget: "text"}
             - name: "histoire"
         label: "B) Notre Histoire"
         file: "content/a-propos/histoire.md"
         fields:
-                    - {label: "Titre", name: "title", widget: "string", default: "Notre Histoire"}
+                    - {label: "Titre", name: "title", widget: "string"}
                     - {label: "Texte", name: "body", widget: "markdown"}
             - name: "mission"
         label: "C) Mission Vision Passion"
@@ -110,6 +110,6 @@ collections:
         label: "Contact"
         file: "content/contact.md"
         fields:
-                    - {label: "Adresse", name: "adresse", widget: "text", default: "6673-A rue De Lotbiniere"}
-                    - {label: "Telephone", name: "phone", widget: "string", default: "(438) 765-4371"}
-                    - {label: "Email", name: "email", widget: "string", default: "info@tapisrougepro.ca"}
+                    - {label: "Adresse", name: "adresse", widget: "text"}
+                    - {label: "Telephone", name: "phone", widget: "string"}
+                    - {label: "Email", name: "email", widget: "string"}
