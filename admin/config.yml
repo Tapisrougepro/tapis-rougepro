@@ -103,9 +103,16 @@ collections:
     fields:
             - {label: "Nom", name: "title", widget: "string"}
             - {label: "Description", name: "short_desc", widget: "text"}
-    - name: "pages"
-    label: "9. Contact"
+        - name: "pages"
+    label: "9. Pages Site"
     files:
+            - name: "home"
+        label: "Accueil"
+        file: "content/home.md"
+        fields:
+                    - {label: "Titre principal", name: "hero_title", widget: "string", default: "Tapis Rouge Pro"}
+                    - {label: "Sous-titre", name: "hero_subtitle", widget: "text"}
+                    - {label: "Contenu Accueil", name: "body", widget: "markdown"}
             - name: "contact"
         label: "Contact"
         file: "content/contact.md"
