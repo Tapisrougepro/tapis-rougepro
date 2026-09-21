@@ -4,12 +4,112 @@ backend:
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 collections:
-  - name: "pages"
-    label: "Pages"
+    - name: "categories_services"
+    label: "1. Categories Services"
+    folder: "content/categories-services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+            - {label: "Nom categorie", name: "title", widget: "string"}
+            - {label: "Description", name: "description", widget: "text", required: false}
+            - {label: "Ordre", name: "order", widget: "number", default: 1}
+    - name: "services"
+    label: "2. Services (par categorie)"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+            - {label: "Nom service", name: "title", widget: "string"}
+            - {label: "Categorie parente", name: "category", widget: "relation", collection: "categories_services", search_fields: ["title"], value_field: "title", display_fields: ["title"]}
+            - {label: "Type", name: "type", widget: "select", options: ["Commercial","Residentiel","Specialise"], default: "Commercial"}
+            - {label: "Resume", name: "short_desc", widget: "text"}
+            - {label: "Description", name: "body", widget: "markdown"}
+            - {label: "Image", name: "image", widget: "image", required: false}
+    - name: "categories_blog"
+    label: "3. Categories Blog"
+    folder: "content/categories-blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+            - {label: "Nom filtre", name: "title", widget: "string"}
+            - {label: "Slug", name: "slug", widget: "string"}
+            - {label: "Ordre", name: "order", widget: "number", default: 1}
+    - name: "blog"
+    label: "4. Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+            - {label: "Titre", name: "title", widget: "string"}
+            - {label: "Date", name: "date", widget: "datetime"}
+            - {label: "Categorie", name: "category", widget: "relation", collection: "categories_blog", search_fields: ["title"], value_field: "title", display_fields: ["title"]}
+            - {label: "Image", name: "image", widget: "image"}
+            - {label: "Resume", name: "excerpt", widget: "text"}
+            - {label: "Contenu", name: "body", widget: "markdown"}
+    - name: "a_propos"
+    label: "5. A Propos Complet"
     files:
-      - name: "home"
-        label: "Accueil"
-        file: "content/home.md"
+            - name: "header"
+        label: "A) En-tete"
+        file: "content/a-propos/header.md"
         fields:
-          - {label: "Titre", name: "title", widget: "string"}
-          - {label: "Contenu", name: "body", widget: "markdown"}
+                    - {label: "Titre", name: "title", widget: "string", default: "A propos de Tapis Rouge Pro"}
+                    - {label: "Sous-titre", name: "subtitle", widget: "text"}
+            - name: "histoire"
+        label: "B) Notre Histoire"
+        file: "content/a-propos/histoire.md"
+        fields:
+                    - {label: "Titre", name: "title", widget: "string", default: "Notre Histoire"}
+                    - {label: "Texte", name: "body", widget: "markdown"}
+            - name: "mission"
+        label: "C) Mission Vision Passion"
+        file: "content/a-propos/mission-vision.md"
+        fields:
+                    - {label: "Mission Titre", name: "mission_title", widget: "string"}
+                    - {label: "Mission Texte", name: "mission_text", widget: "markdown"}
+                    - {label: "Vision Titre", name: "vision_title", widget: "string"}
+                    - {label: "Vision Texte", name: "vision_text", widget: "markdown"}
+                    - {label: "Passion Titre", name: "passion_title", widget: "string"}
+                    - {label: "Passion Texte", name: "passion_text", widget: "markdown"}
+            - name: "protection"
+        label: "D) Protection donnees"
+        file: "content/a-propos/protection.md"
+        fields:
+                    - {label: "Titre", name: "title", widget: "string"}
+                    - {label: "Texte", name: "body", widget: "markdown"}
+    - name: "valeurs"
+    label: "6. Nos Valeurs"
+    folder: "content/valeurs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+            - {label: "Titre", name: "title", widget: "string"}
+            - {label: "Description", name: "description", widget: "text"}
+            - {label: "Ordre", name: "order", widget: "number", default: 1}
+    - name: "equipe"
+    label: "7. Notre Equipe"
+    folder: "content/equipe"
+    create: true
+    slug: "{{slug}}"
+    fields:
+            - {label: "Nom", name: "name", widget: "string"}
+            - {label: "Poste", name: "poste", widget: "string"}
+            - {label: "Photo", name: "photo", widget: "image", required: false}
+    - name: "certifications"
+    label: "8. Certifications"
+    folder: "content/certifications"
+    create: true
+    slug: "{{slug}}"
+    fields:
+            - {label: "Nom", name: "title", widget: "string"}
+            - {label: "Description", name: "short_desc", widget: "text"}
+    - name: "pages"
+    label: "9. Contact"
+    files:
+            - name: "contact"
+        label: "Contact"
+        file: "content/contact.md"
+        fields:
+                    - {label: "Adresse", name: "adresse", widget: "text", default: "6673-A rue De Lotbiniere"}
+                    - {label: "Telephone", name: "phone", widget: "string", default: "(438) 765-4371"}
+                    - {label: "Email", name: "email", widget: "string", default: "info@tapisrougepro.ca"}
