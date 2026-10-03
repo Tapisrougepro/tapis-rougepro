@@ -1,68 +1,18 @@
-# Administration Tapis Rouge Pro - Compatible Vercel + GitHub
 backend:
   name: github
   repo: Tapisrougepro/tapis-rougepro
   branch: main
-local_backend: true
 media_folder: "public/uploads"
 public_folder: "/uploads"
 site_url: https://tapisrougepro.ca
-display_url: https://tapisrougepro.ca
 
 collections:
     - name: "pages"
-    label: "Pages du Site"
+    label: "Pages"
     files:
             - name: "home"
-        label: "1. Accueil"
+        label: "Accueil"
         file: "content/home.md"
-        fields:
-                    - {label: "Titre Principal", name: "title", widget: "string"}
-                    - {label: "Sous-titre", name: "subtitle", widget: "string"}
-                    - {label: "Bouton Devis", name: "cta1_text", widget: "string"}
-                    - {label: "Image de fond", name: "hero_image", widget: "image", required: false}
-            - name: "about"
-        label: "2. À propos"
-        file: "content/about.md"
         fields:
                     - {label: "Titre", name: "title", widget: "string"}
                     - {label: "Contenu", name: "body", widget: "markdown"}
-            - name: "contact"
-        label: "3. Contact"
-        file: "content/contact.md"
-        fields:
-                    - {label: "Titre", name: "title", widget: "string"}
-                    - {label: "Téléphone", name: "phone", widget: "string"}
-                    - {label: "Email", name: "email", widget: "string"}
-                    - {label: "Texte", name: "body", widget: "markdown"}
-
-    - name: "services"
-    label: "Nos Services"
-    folder: "content/services"
-    create: true
-    slug: "{{slug}}"
-    fields:
-            - {label: "Nom du Service", name: "title", widget: "string"}
-            - label: "Catégorie"
-        name: "category"
-        widget: "select"
-        options: ["Commercial", "Résidentiel", "Spécialisé"]
-            - {label: "Image", name: "image", widget: "image"}
-            - {label: "Courte description", name: "excerpt", widget: "text"}
-            - {label: "Description complète", name: "body", widget: "markdown"}
-
-    - name: "blog"
-    label: "Blog / Actualités"
-    folder: "content/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-            - {label: "Titre", name: "title", widget: "string"}
-            - {label: "Date", name: "date", widget: "datetime"}
-            - label: "Catégorie"
-        name: "category"
-        widget: "select"
-        options: ["Conseils", "Écologie", "Actualités", "Tendances"]
-            - {label: "Image", name: "image", widget: "image"}
-            - {label: "Résumé", name: "excerpt", widget: "text"}
-            - {label: "Article", name: "body", widget: "markdown"}
